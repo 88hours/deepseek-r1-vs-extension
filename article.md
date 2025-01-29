@@ -1,7 +1,10 @@
-# Connecting Deepseek Model to VS Code Using Ollama
+# Connect Deepseek R1 Model to VS Code in 10 Minutes
 
 ## Introduction
 Integrating AI models into your development workflow can significantly enhance productivity. This guide explains how to connect the Deepseek model running on Ollama to a VS Code extension, enabling seamless interaction with an AI assistant within your editor.
+
+## Code Repository
+The code for this project is available on GitHub: [Deepseek R1 VS Extension POC](https://github.com/88hours/deepseek-r1-vs-extension)
 
 ## Prerequisites
 Before proceeding, ensure you have the following:
