@@ -88,9 +88,4 @@ This will create a `.vsix` file in your project directory.
 Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
 
 ## License
-
-This project is licensed under the MIT License.
-
----
-
-Feel free to customize the above template with your actual GitHub repository URL and any additional information specific to your project.
+None
