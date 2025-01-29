@@ -17,7 +17,7 @@ Welcome to the **Deepseek-r1:1.5b** VS Code extension! This extension provides a
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/deepseek-r1-1-5b-moe.git
+   git clone https://github.com/88hours/deepseek-r1-vs-extension.git
    cd deepseek-r1-1-5b-moe
    ```
 
