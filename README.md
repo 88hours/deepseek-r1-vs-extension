@@ -1,71 +1,96 @@
-# deepseek-r1-1-5b-moe README
+# Ddeepseek-r1:1.5b VS Code Extension - POC
 
-This is the README for your extension "deepseek-r1-1-5b-moe". After writing up a brief description, we recommend including the following sections.
+Welcome to the **Deepseek-r1:1.5b** VS Code extension! This extension provides a simple webview panel that interacts with the user through a button click.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- Activates a webview panel displaying custom HTML content.
+- Sends and receives messages between the webview and the extension.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Visual Studio Code
+- Node.js
 
-## Extension Settings
+## Installation
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. **Clone the Repository**:
 
-For example:
+   ```bash
+   git clone https://github.com/yourusername/deepseek-r1-1-5b-moe.git
+   cd deepseek-r1-1-5b-moe
+   ```
 
-This extension contributes the following settings:
+2. **Install Dependencies**:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+   ```bash
+   npm install
+   ```
 
-## Known Issues
+3. **Open in VS Code**:
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+   ```bash
+   code .
+   ```
 
-## Release Notes
+## Usage
 
-Users appreciate release notes as you update your extension.
+1. **Build the Extension**:
 
-### 1.0.0
+   Open the terminal in VS Code and run:
 
-Initial release of ...
+   ```bash
+   npm run compile
+   ```
 
-### 1.0.1
+2. **Launch the Extension**:
 
-Fixed issue #.
+   Press `F5` or `Debug: Start Debugging` to open a new VS Code window with the extension loaded.
 
-### 1.1.0
+3. **Activate the Webview**:
 
-Added features X, Y, and Z.
+   - Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS).
+   - Run the command `DeepSeek Start`.
+
+4. **Interact with the Webview**:
+
+   - Click the "Ask" button in the webview to send a message to the extension.
+   - The extension will display a message in VS Code.
+
+## Development
+
+- **Modify `extension.ts`**: Customize the webview content and message handling.
+- **Test Changes**: Use the debugger to test changes by pressing `F5`.
+
+## Packaging
+
+
+1. **Package the Extension:**
+Use `vsce` to package your extension. If you don't have `vsce` installed, you can install it globally:
+   ```bash
+
+npm install -g vsce
+   ```
+Then package the extension:
+ ```bash
+vsce package
+```
+This will create a `.vsix` file in your project directory.
+2. **Install the .vsix File:**
+
+    - Open Visual Studio Code.
+    - Go to the Extensions View (`Ctrl+Shift+X`).
+    - Click on the three-dot menu and select Install from VSIX....
+    - Choose the generated `.vsix` file.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License.
 
 ---
 
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Feel free to customize the above template with your actual GitHub repository URL and any additional information specific to your project.

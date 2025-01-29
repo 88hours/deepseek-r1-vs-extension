@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "deepseek-r1-1-5b-moe.deepseek",
-        "title": "1.58bit DeepSeek R1 - 131GB Dynamic GGUF"
+        "command": "deepseek.start",
+        "title": "DeepSeek Chat"
       }
     ]
   },
